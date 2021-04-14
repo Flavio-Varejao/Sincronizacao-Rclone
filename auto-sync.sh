@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-#ANTES DE USAR ESSE SCRIPT CONFIGURE O RCLONE PARA O DISPOSITIVO DA NUVEM
-
-# Esse script é para sincronizar uma pasta da sua máquina para a nuvem.
-# ALTERE o caminho e o nome do seu diretório de origem e destino.
-# Para sincronizar da nuvem para sua máquina, INVERTA os diretórios abaixo.
-
 DIR_ORIGEM="/home/$USER/Backup/" # <-- Altere seu diretório de origem
 DIR_DESTINO="mydrive:/"          # <-- Altere seu dispositivo remoto
 

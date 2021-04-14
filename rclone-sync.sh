@@ -1,55 +1,5 @@
 #!/usr/bin/env bash
 #
-# rclone-sync.sh - Sincronização de arquivos na nuvem com rclone
-#
-# Site:     
-# Autor:      Flávio Varejão
-# Manutenção: Flávio Varejão
-# -------------------------------------------------------------------------------------------------------------------------- #
-# Este script reúne as opções e comandos mais utilizados na ferramenta rclone.
-# Configurar, sincronizar, listar arquivos, verificar, exibir informações, exibir
-# o manual, etc. Também é possível agendar sincronizações com a ferramenta
-# crontab. Leia as instruções a seguir.
-# 
-# Dê permissão de execução (primeiro acesso):
-#   $ chmod +x rclone-sync.sh
-#
-# Exemplos de uso:
-#   $ ./rclone-sync.sh -s
-#   Neste exemplo o script vai realizar a sincronização de arquivos na nuvem
-#
-# Na seção de variáveis você deve digitar o seu DIR_ORIGEM e DIR_DESTINO
-# O DIR_ORIGEM é o diretório da máquina local/nuvem
-# O DIR_DESTINO é o diretório da nuvem/máquina local
-#
-# A SINCRONIZAÇÃO SÓ VAI SER POSSÍVEL SE O RCLONE ESTIVER CONFIGURADO PARA O 
-# SERVIÇO REMOTO (google drive, dropbox, onedrive, etc).
-#
-# Para configurar inicie este script com a opção -c
-#   $ ./rclone-sync.sh -c
-# 
-# Dúvidas? Consulte o manual do rclone com o comando:
-#   $ ./rclone-sync.sh -m
-#
-# Para mais informações visite o website:
-#   https://rclone.org/docs
-# -------------------------------------------------------------------------------------------------------------------------- #
-# Histórico:
-#   Versão 1.0, Flávio:
-#     31/03/2020
-#       - Início do programa
-#       - Adicionado variáveis, testes, funções e execução
-#     01/04/2020         
-#       - Adicionado novas funções e menu de ajuda
-#     02/04/2020
-#       - Adicionado tratamento de erros (função Verifica_status)
-#     27/09/2020
-#       - Adicionado a opção de montagem de disco
-#     23/10/2020
-#       - Adicionado a opção de atualizar o rclone
-# -------------------------------------------------------------------------------------------------------------------------- #
-# Testado em:
-#   bash 4.4.20 
 # -------------------------------------------------------------------------------------------------------------------------- #
 # ------------------------------------------------ VARIÁVEIS------------------------------------------------- #
 
