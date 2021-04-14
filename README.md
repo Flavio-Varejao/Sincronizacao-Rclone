@@ -2,7 +2,7 @@
 
 ## Executa as funcionalidades do Rclone
 
-Site:  
+Site: <https://youtu.be/HtPT3anbCaU>  
 Autor:      Flávio Varejão  
 Manutenção: Flávio Varejão  
 
@@ -104,6 +104,10 @@ ANTES DE EXECUTAR ESSE SCRIPT:
 
 3. Edite o crontab e faça o agendamento.  
 
+Editando o crontab:  
+```
+    $ crontab -e  
+```
 Exemplo de agendamento no Crontab:  
 ```
     0 21 * * * /home/$USER/.auto-sync/auto-sync.sh  
