@@ -42,14 +42,14 @@ O DIR_DESTINO é o diretório da nuvem/máquina local
 
 A SINCRONIZAÇÃO SÓ VAI SER POSSÍVEL SE O RCLONE ESTIVER CONFIGURADO PARA O SERVIÇO REMOTO (google drive, dropbox, onedrive, etc).  
 
-## Configuração
+### Configuração
 
 Para configurar inicie este script com a opção -c  
 ```
     $ ./rclone-sync.sh -c
 ```
  
-## Dúvidas
+### Dúvidas
 
 Consulte o manual do rclone com o comando:  
 ```
